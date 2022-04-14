@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root{
+    --navy: #023047;
+    --sky-blue: #8ecae6;
+    --off-white: #f1f1f1;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--sky-blue);
+}
+
+
+
+
+
+/* fixes bootstrap blue links*/
+
+a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.navbar{
+    background-color: var(--sky-blue);
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.navbar-nav .nav-link{
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: bolder;
+
+    /* font-size: 20px; */
+}
+
+.navbar-nav{
+    display: inline-flex;
+    padding-top: 3rem;
+    gap: 6rem;
+}
+
+.navbar-collapse{
+    justify-content: space-between;
+}
+.navbar-nav i{
+
+    margin-left: .5rem;
+}
+
+.navbar-toggler .fa-bars{
+    color: var(--navy);
+}
+
+
+
+
+
+
+ th {
+    color: white;
+    background-color: #023047;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+td {
+    color: #023047;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-size: 20px;
+}
+
+li {
+   display: inline;
+    padding: 10px 40px;
+}
+.navbar-brand{
+    display: flex;
+}
+
+.brand-logo{
+    max-width: 50%;
+
+}
+
