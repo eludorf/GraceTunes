@@ -1,4 +1,5 @@
-GraceTunes
+<h1>GraceTunes</h1>
+
 As a user, I want to be able to create an account and log in with secure authentication.
 
 As a user, I want to be able to search the website for songs whether that's by song name, artist name, or different tags (like genre, key, etc).
