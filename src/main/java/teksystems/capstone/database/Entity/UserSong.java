@@ -1,6 +1,5 @@
 package teksystems.capstone.database.Entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -13,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "users_song")
-public class UsersSong {
+public class UserSong {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +21,9 @@ public class UsersSong {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    @JsonBackReference
-    private Users users;
+    private User users;
 
     @ManyToOne
     @JoinColumn(name = "song_id")
-    @JsonBackReference
-    private Songs songs;
+    private Song songs;
 }

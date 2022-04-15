@@ -2,6 +2,7 @@ package teksystems.capstone.database.Entity;
 
 import lombok.*;
 import javax.persistence.*;
+import java.util.List;
 
 
 @Getter
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "users")
-public class Users {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,9 +26,7 @@ public class Users {
     @Column(name = "password", nullable = false, unique = false)
     private String password;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinTable(name="users_song", joinColumns = {@JoinColumn(name="user_id", referencedColumnName = "id")},
-            inverseJoinColumns={@JoinColumn(name="song_id", referencedColumnName = "id")})
-    private Songs songs;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "users")
+    private List<UserSong> songsList;
 }
 

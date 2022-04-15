@@ -94,8 +94,8 @@
         <th>Artist</th>
         <th>Key</th>
     </tr>
-    <c:forEach var="songs" items="${allSongs}">
-        <tr>
+    <c:forEach items="${allSongs}" var="songs">
+        <tr scope="row">
             <td>${songs.song_name}</td>
             <td>${songs.artist_name}</td>
             <td>${songs.song_key}</td>

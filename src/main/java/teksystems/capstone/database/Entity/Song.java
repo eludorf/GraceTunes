@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name="songs")
-public class Songs {
+public class Song {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,7 @@ public class Songs {
     private String song_name;
 
     @Column(name = "song_time", nullable = false)
-    private Long song_time;
+    private String song_time;
 
     @Column(name = "song_key", nullable = false)
     private String song_key;
@@ -41,9 +41,6 @@ public class Songs {
     @Column(name = "user_id", nullable = false)
     private Integer user_id;
 
-    @OneToMany(cascade=CascadeType.ALL)
-    @JoinTable(name="users_song",
-            joinColumns={@JoinColumn(name="song_id", referencedColumnName="id")},
-            inverseJoinColumns={@JoinColumn(name="user_id", referencedColumnName="id")})
-    private List<Users> userList;
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "songs")
+    private List<UserSong> userList;
 }
