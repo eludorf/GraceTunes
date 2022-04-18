@@ -9,15 +9,15 @@ import java.util.List;
 
 @Repository
 public interface ReviewDAO extends JpaRepository<Review, String> {
-//
-//    Review findReviewByReview(@Param("review") String review);
-//
-//    List<Review> findReviewByUserId(@Param("user_id") Integer user_id);
-//
-//    List<Review> findReviewBySongId(@Param("song_id") Integer song_id);
-//
-//    List<Review> findReviewByRating(@Param("rating") Integer rating);
-//
-//    List<Review> findAll();
+
+    Review findReviewByReview(@Param("review") String review);
+
+    List<Review> findReviewByUserId(@Param("user_id") Integer user_id);
+
+    List<Review> findReviewBySongId(@Param("song_id") Integer song_id);
+
+    List<Review> findReviewByRating(@Param("rating") Integer rating);
+
+    List<Review> findAll();
 
 }

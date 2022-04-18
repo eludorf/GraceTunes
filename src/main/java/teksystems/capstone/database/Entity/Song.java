@@ -3,6 +3,7 @@ package teksystems.capstone.database.Entity;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Getter
@@ -38,9 +39,9 @@ public class Song {
     @Column(name = "album_name", nullable = false)
     private String albumName;
 
-    @Column(name = "user_id", nullable = false)
+    @ManyToMany(targetEntity = User.class)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    @NotNull
     private Integer userId;
 
-    @OneToMany(cascade=CascadeType.ALL, mappedBy = "songs")
-    private List<UserSong> userList;
 }

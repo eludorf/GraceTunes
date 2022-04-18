@@ -1,5 +1,4 @@
-<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,43 +7,61 @@
     <meta name="viewport" content="width=device-width", initial-scale="1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
     <title>GraceTunes: Home</title>
-    <link href="<c:url value="/resources/mytheme/CSS/styles.css"/>" rel="stylesheet" type="text/css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" class="a" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link href="../../../pub/css/landing.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/74c9f6574b.js" crossorigin="anonymous"></script>
 
-    <style>
-        body {
-            font-family: Poppins;
-        }
-    </style>
 </head>
-<body>
 
 <header>
-            <div class="collapse nav-bar collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <img class="logo" src="<c:url value="/resources/mytheme/images/GraceTunes Logo.png"/>" style='vertical-align:middle;'sr alt="logo"
-                         width="200"
-                         height="200">
-                    <li class="nav-item" style="display:inline">
-                        <a class="nav-link active" aria-current="page" href="/user/landing">Home</a>
-                    </li>
-                    <li class="nav-item" style="display:inline">
-                        <a class="nav-link" href="/user/likedsongs">Liked Songs   <i class="fa-regular fa-heart"></i></a>
-                    </li>
+    <div class="logo"><a href="../../../pub/images/GraceTunes%20Logo.png"><img src="../../../pub/images/GraceTunes%20Logo.png"></a>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
 
-                <li class="dropdown">
-                    <button class="dropbtn" href="/user/search">Search  <i class="fa-solid fa-magnifying-glass"></i></button>
-                </li>
-                    <li class="nav-item" style="display:inline">
-                        <a class="nav-link" href="/user/login">Login</a>
-                    </li>
-                    <li class="nav-item" style="display:inline">
-                        <a class="nav-link" href="/user/registration">Register</a>
-                    </li>
-                </ul>
+
+        <div class="container-fluid" id="nav-container">
+
+
+            <a class="navbar-brand" href="#">
+                <img class="brand-logo" src="../../../pub/images/logo.png" alt="">
+            </a>
+
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navmobile"
+                    aria-controls="navmobile" aria-expanded="false" aria-label="Toggle navigation">
+                <i title="" class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarcustom">
+                <div id="middle-links">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="landing">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="addsong">Add Song</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="likedsongs">Liked Songs<i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search">Search<i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+        </div>
+
+
+    </nav>
 </header>
-</body>
-</html>

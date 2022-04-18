@@ -1,7 +1,10 @@
 package teksystems.capstone.database.Entity;
 
 import lombok.*;
+import org.hibernate.validator.constraints.UniqueElements;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -20,10 +23,16 @@ public class Review {
     @Column(name = "review", nullable = false, unique = true)
     private String review;
 
-    @Column(name = "user_id", nullable = false, unique = true)
+    @ManyToOne(targetEntity = User.class)
+    @JoinColumn(name="user_id", referencedColumnName = "id")
+    @NotNull
+    @UniqueElements
     private Integer user_id;
 
-    @Column(name = "song_id", nullable = false, unique = false)
+    @ManyToOne(targetEntity = Song.class)
+    @JoinColumn(name="song_id", referencedColumnName = "id")
+    @NotNull
+    @UniqueElements
     private Integer song_id;
 
 }
