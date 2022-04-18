@@ -10,8 +10,8 @@ import java.util.List;
 @Repository
 public interface UserSongDAO extends JpaRepository<UserSong, Integer> {
 
-    UserSong findUserSongById(@Param("id") Integer id);
-
-    List<UserSong> findAll();
+//    UserSong findUserSongById(@Param("id") Integer id);
+//
+//    List<UserSong> findAll();
 
 }

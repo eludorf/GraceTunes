@@ -19,7 +19,7 @@
 <img src="../../../pub/images/GraceTunes%20Logo.png" alt="logo" class="center"
 >
 </div>
-    <form id="novalidate">
+    <form action="/user/loginSubmit" method="post" id="novalidate">
     <div class="login-page-username">
         <label id="username" for="formUsername" class="form-label">Username</label>
         <input

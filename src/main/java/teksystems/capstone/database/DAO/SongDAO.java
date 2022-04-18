@@ -12,19 +12,19 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
 
     Song findSongById(@Param("id") Integer id);
 
-    List<Song> findSongBySong_name(@Param("song_name") String song_name);
-
-    List<Song> findSongByArtist_name(@Param("artist_name") String artist_name);
-
-    List<Song> findSongByAlbum_name(@Param("album_name") String album_name);
-
-    List<Song> findSongBySong_time(@Param("song_time") String song_time);
-
-    List<Song> findSongBySong_key(@Param("song_key") String song_key);
-
-    List<Song> findSongBySong_genre(@Param("song_genre") String song_genre);
-
-    List<Song> findSongByUser_id(@Param("user_id") Integer user_id);
+//    List<Song> findSongBySongName(@Param("song_name") String song_name);
+//
+//    List<Song> findSongByArtistName(@Param("artist_name") String artist_name);
+//
+//    List<Song> findSongByAlbumName(@Param("album_name") String album_name);
+//
+//    List<Song> findSongBySongTime(@Param("song_time") String song_time);
+//
+//    List<Song> findSongBySongKey(@Param("song_key") String song_key);
+//
+//    List<Song> findSongBySongGenre(@Param("song_genre") String song_genre);
+//
+//    List<Song> findSongByUserId(@Param("user_id") Integer user_id);
 
     List<Song> findAll();
 

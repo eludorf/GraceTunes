@@ -19,28 +19,6 @@
 <header>
     <div class="logo"><a href="../../../pub/images/GraceTunes%20Logo.png"><img src="../../../pub/images/GraceTunes%20Logo.png"></a>
     </div>
-<div class="collapse nav-bar navbar-expand-lg" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <div class="logo" src="logo.png" alt="logo">
-            <li class="nav-item" style="display:inline">
-                <a class="nav-link active" aria-current="page" href="/user/landing">Home</a>
-            </li>
-            <li class="nav-item" style="display:inline">
-                <a class="nav-link" href="/user/likedsongs">Liked Songs   <i class="fa-regular fa-heart"></i></a>
-            </li>
-
-        <li class="dropdown">
-            <button class="dropbtn" href="/user/search">Search  <i class="fa-solid fa-magnifying-glass"></i></button>
-        </li>
-            <li class="nav-item" style="display:inline">
-                <a class="nav-link" href="/user/login">Login</a>
-            </li>
-            <li class="nav-item" style="display:inline">
-                <a class="nav-link" href="/user/registration">Register</a>
-            </li>
-        </ul>
-    </div>
-
     <nav class="navbar navbar-expand-lg ">
 
 
@@ -61,22 +39,22 @@
                 <div id="middle-links">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="landing">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Add Song</a>
+                            <a class="nav-link" href="addsong">Add Song</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Liked Songs<i class="fa-regular fa-heart"></i></a>
+                            <a class="nav-link" href="likedsongs">Liked Songs<i class="fa-regular fa-heart"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Search<i class="fa-solid fa-magnifying-glass"></i></a>
+                            <a class="nav-link" href="search">Search<i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="register">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -94,11 +72,11 @@
         <th>Artist</th>
         <th>Key</th>
     </tr>
-    <c:forEach items="${allSongs}" var="songs">
+    <c:forEach items="${allSongs}" var="song">
         <tr scope="row">
-            <td>${songs.song_name}</td>
-            <td>${songs.artist_name}</td>
-            <td>${songs.song_key}</td>
+            <td>${song.songName}</td>
+            <td>${song.artistName}</td>
+            <td>${song.songKey}</td>
         </tr>
     </c:forEach>
 </table>

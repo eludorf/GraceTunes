@@ -50,7 +50,7 @@ a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:f
 }
 .navbar-nav i{
 
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
 
 .navbar-toggler .fa-bars{

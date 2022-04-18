@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="songs")
+@Table(name="song")
 public class Song {
 
     @Id
@@ -21,25 +21,25 @@ public class Song {
     private Integer id;
 
     @Column(name = "song_name", nullable = false)
-    private String song_name;
+    private String songName;
 
     @Column(name = "song_time", nullable = false)
-    private String song_time;
+    private String songTime;
 
     @Column(name = "song_key", nullable = false)
-    private String song_key;
+    private String songKey;
 
     @Column(name = "song_genre", nullable = false)
-    private String song_genre;
+    private String songGenre;
 
     @Column(name = "artist_name", nullable = false)
-    private String artist_name;
+    private String artistName;
 
     @Column(name = "album_name", nullable = false)
-    private String album_name;
+    private String albumName;
 
     @Column(name = "user_id", nullable = false)
-    private Integer user_id;
+    private Integer userId;
 
     @OneToMany(cascade=CascadeType.ALL, mappedBy = "songs")
     private List<UserSong> userList;

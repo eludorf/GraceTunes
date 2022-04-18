@@ -16,7 +16,7 @@ public class RegisterFormBean {
     @NotBlank(message = "Username is required")
     @UserNameUnique(message = "Username is already in use")
     @Length(min=8, max=15, message="Username must be between 8 and 15 characters")
-    private String userName;
+    private String username;
 
     @Length(min=3, max=30, message="First Name must be between 3 and 30 characters")
     @NotBlank(message="First Name is required")
