@@ -1,4 +1,8 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="../include/header.jsp" />
+
+<link href="../../../pub/css/landing.css" rel="stylesheet" type="text/css"/>
+
 
 <table cellspacing="0", width="100%">
     <tr>

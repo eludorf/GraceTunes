@@ -11,10 +11,6 @@ body {
     background-color: var(--sky-blue);
 }
 
-
-
-
-
 /* fixes bootstrap blue links*/
 
 a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active{
@@ -26,14 +22,13 @@ a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:f
 .navbar{
     background-color: var(--sky-blue);
     display: flex;
-    justify-content: space-between;
 
 
 }
 
 .navbar-nav .nav-link{
     color: var(--navy);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bolder;
 
     /* font-size: 20px; */
@@ -42,7 +37,7 @@ a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:f
 .navbar-nav{
     display: inline-flex;
     padding-top: 3rem;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .navbar-collapse{
@@ -91,7 +86,8 @@ li {
 }
 
 .brand-logo{
-    max-width: 50%;
-
+    height: 200px;
+    width: auto;
+    padding: 0px;
 }
 

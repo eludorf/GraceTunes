@@ -8,8 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GraceTunes: Home</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" class="a" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link href="../../../pub/css/landing.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/74c9f6574b.js" crossorigin="anonymous"></script>
@@ -39,7 +37,7 @@
                             <a class="nav-link active" aria-current="page" href="landing">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="addsong">Add Song</a>
+                            <a class="nav-link" href="addsong">Add a Song</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="likedsongs">Liked Songs<i class="fa-regular fa-heart"></i></a>

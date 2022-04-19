@@ -1,6 +1,5 @@
 package teksystems.capstone.database.DAO;
 
-import org.springframework.data.jpa.repository.Query;
 import teksystems.capstone.database.Entity.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
@@ -21,6 +20,5 @@ public interface ReviewDAO extends JpaRepository<Review, String> {
 
     List<Review> findAll();
 
-    @Query("select r from Review r where")
 
 }
