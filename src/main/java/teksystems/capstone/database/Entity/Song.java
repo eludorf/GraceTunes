@@ -3,7 +3,6 @@ package teksystems.capstone.database.Entity;
 import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Getter
@@ -39,9 +38,11 @@ public class Song {
     @Column(name = "album_name", nullable = false)
     private String albumName;
 
-    @ManyToMany(targetEntity = User.class)
-    @JoinColumn(name = "user_id", referencedColumnName = "id")
-    @NotNull
-    private Integer userId;
+    @ManyToMany(fetch = FetchType.LAZY) // don't load user with song
+    @JoinTable(
+            name = "user_song",
+            joinColumns = @JoinColumn(name="song_id"),
+            inverseJoinColumns = @JoinColumn(name="user_id"))
+    private List<User> user;
 
 }

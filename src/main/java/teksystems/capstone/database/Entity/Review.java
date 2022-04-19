@@ -17,6 +17,10 @@ import javax.validation.constraints.NotNull;
 public class Review {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name= "id")
+    private Integer id;
+
     @Column(name = "rating", nullable = false, unique = true)
     private Integer rating;
 
@@ -27,12 +31,12 @@ public class Review {
     @JoinColumn(name="user_id", referencedColumnName = "id")
     @NotNull
     @UniqueElements
-    private Integer user_id;
+    private User user;
 
     @ManyToOne(targetEntity = Song.class)
     @JoinColumn(name="song_id", referencedColumnName = "id")
     @NotNull
     @UniqueElements
-    private Integer song_id;
+    private Song song;
 
 }

@@ -21,14 +21,11 @@
     </div>
     <nav class="navbar navbar-expand-lg ">
 
-
         <div class="container-fluid" id="nav-container">
-
 
             <a class="navbar-brand" href="#">
                 <img class="brand-logo" src="../../../pub/images/logo.png" alt="">
             </a>
-
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navmobile"
                     aria-controls="navmobile" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,10 +55,7 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
-
-
     </nav>
 </header>

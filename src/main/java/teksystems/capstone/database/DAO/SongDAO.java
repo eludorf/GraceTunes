@@ -1,5 +1,7 @@
 package teksystems.capstone.database.DAO;
 
+import org.hibernate.mapping.Collection;
+import org.springframework.data.jpa.repository.Query;
 import teksystems.capstone.database.Entity.Song;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
@@ -13,6 +15,11 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
     Song findSongById(@Param("id") Integer id);
 
     Song findSongBySongName(@Param("song_name") String song_name);
+
+    @Query(
+            value = "SELECT * FROM SONG s WHERE s.song_key = G",
+            nativeQuery = true)
+    Collection findAllSongsInG();
 
     List<Song> findSongByArtistName(@Param("artist_name") String artist_name);
 
