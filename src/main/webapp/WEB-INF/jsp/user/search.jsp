@@ -1,16 +1,20 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="d" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="../include/header.jsp" />
 
+<h1>Search</h1>
+<br>
+<form action="/user/search" method="GET">
+    Song Name : <input type="text" name="songName" value="${songName}">
+    <button type="submit">Submit</button>
+</form>
 
-<div id="song-container" class="container">
-    <h1>Song Search</h1>
+<br>
 
-    <form action="/user/search" method="get">
-        <input type="text" name="songName" id="songName" value="${songName}">
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
+<c:if test="${not empty songName}">
+    <h5>Search Results Found ${usersModelKey.size()}</h5>
+    <br>
+</c:if>
     <br>
     <table class="table">
         <tr scope="row">

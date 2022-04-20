@@ -33,7 +33,7 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
 
     Song findSongByUserId(@Param("user_id") Integer user_id);
 
-    List<Song> findAllSongs();
+    List<Song> findAll();
 
 
 

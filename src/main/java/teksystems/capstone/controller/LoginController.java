@@ -1,6 +1,7 @@
 package teksystems.capstone.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,6 +18,9 @@ public class LoginController {
 
     @Autowired
     private UserDAO userDAO;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @RequestMapping(value="/user/register", method = RequestMethod.GET)
     public ModelAndView createUserPage(@RequestParam(required = false)Integer id) throws Exception {
@@ -39,10 +43,11 @@ public class LoginController {
         ModelAndView response = new ModelAndView();
         User user = new User();
         user.setFirstName(form.getFirstName());
-        System.out.println(form.getFirstName());
+        System.out.println(form.getUsername());
         user.setLastName(form.getLastName());
         user.setUsername(form.getUsername());
-        user.setPassword(form.getPassword());
+        String password = passwordEncoder.encode(form.getPassword());
+        user.setPassword(password);
         userDAO.save(user);
         response.setViewName("redirect:/user/landing");
         return response;
@@ -55,10 +60,10 @@ public class LoginController {
         return response;
     }
 
-    @RequestMapping(value = "/user/loginSubmit", method = RequestMethod.POST)
-    public ModelAndView loginUserSubmit( RegisterFormBean form) throws Exception {
-        ModelAndView response = new ModelAndView();
-        response.setViewName("redirect:/user/landing");
-        return response;
-    }
+//    @RequestMapping(value = "/user/loginSubmit", method = RequestMethod.POST)
+//    public ModelAndView loginUserSubmit( RegisterFormBean form) throws Exception {
+//        ModelAndView response = new ModelAndView();
+//        response.setViewName("redirect:/user/landing");
+//        return response;
+//    }
 }

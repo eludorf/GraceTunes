@@ -26,6 +26,7 @@
                 type="text"
                 class="form-control"
                 id="formUsername"
+                name="username"
         />
     </div>
     <div class="login-page-password">
@@ -34,6 +35,7 @@
                 type="password"
                 class="form-control"
                 id="formPassword"
+                name="password"
         />
     </div>
         <div>&nbsp;</div>
