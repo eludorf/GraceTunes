@@ -14,11 +14,6 @@
 
 <br>
 
-<d:if test="${not empty songName}">
-    <h5>Search Results Found ${songsModelKey.size()}</h5>
-    <br>
-</d:if>
-
     <table class="table">
         <tr scope="row">
             <th>Song ID</th>
@@ -28,7 +23,6 @@
             <th>Song Genre</th>
             <th>Artist Name</th>
             <th>Album Name</th>
-            <th>Chord Sheet</th>
         </tr>
         <d:forEach items="${songsModelKey}" var="song">
             <tr scope="row">
@@ -39,7 +33,6 @@
             <td>${song.songGenre}</td>
             <td>${song.artistName}</td>
             <td>${song.albumName}</td>
-                <td>${song.chordSheet}</td>
             </tr>
         </d:forEach>
     </table>

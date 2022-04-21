@@ -13,7 +13,7 @@ body {
 
 /* fixes bootstrap blue links*/
 
-a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active{
+a, a:hover, a:focus, a:active, .nav-bar, .nav-link, .nav-link:hover, .nav-link:focus, .nav-link:active {
     text-decoration: none;
     color: inherit;
 }
@@ -92,5 +92,11 @@ li {
 }
 
 .addsong{
+    color: #023047;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: white;
+    border: 0px;
     color: #023047;
 }

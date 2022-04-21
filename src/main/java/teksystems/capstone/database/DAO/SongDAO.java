@@ -32,7 +32,7 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
 
     Song findSongBySongGenre(@Param("song_genre") String song_genre);
 
-    Optional<List<Song>>getSongsBySongNameStartingWith(String song_name);
+  List<Song>getSongsBySongNameStartingWith(@Param("song_name")String song_name);
 
     List<Song> findAll();
 

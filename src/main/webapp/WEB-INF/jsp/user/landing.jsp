@@ -50,11 +50,10 @@ console.log(clickedBtnname + " " + bananas);
         <th>Name</th>
         <th>Artist</th>
         <th>Key</th>
-        <th>Chord Sheet</th>
     </tr>
     <c:forEach items="${allSongs}" var="song">
         <tr scope="row">
-            <td><form onsubmit = "event.preventDefault();"><input type="hidden" name="${song.id}"><button name="${song.id}" class="btn-primary"><i class="fa-solid fa-circle-plus"></i></button></form></td>
+            <td><form onsubmit = "event.preventDefault();"><input type="hidden" name="${song.id}"><button name="${song.id}" class="btn-primary shadow-none"><i class="fa-solid fa-circle-plus"></i></button></form></td>
             <td>${song.songName}</td>
             <td>${song.artistName}</td>
             <td>${song.songKey}</td>
