@@ -1,21 +1,24 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "d" %>
 
 <jsp:include page="../include/header.jsp" />
 
-<h1>Search</h1>
-<br>
+<script src="../../../pub/css/search.css"></script>
+<div id="search-container" class="container">
+    <h1 style="color:#023047">Search Songs</h1>
+
 <form action="/user/search" method="GET">
-    Song Name : <input type="text" name="songName" value="${songName}">
-    <button type="submit">Submit</button>
+    Song Name <input type="text" style="color:#023047" name="songName" id="songNameId" value="${songName}">
+    <button type="submit" class="btn btn=primary">Search</button>
 </form>
 
 <br>
 
-<c:if test="${not empty songName}">
-    <h5>Search Results Found ${usersModelKey.size()}</h5>
+<d:if test="${not empty songName}">
+    <h5>Search Results Found ${songsModelKey.size()}</h5>
     <br>
-</c:if>
-    <br>
+</d:if>
+
     <table class="table">
         <tr scope="row">
             <th>Song ID</th>
@@ -25,16 +28,18 @@
             <th>Song Genre</th>
             <th>Artist Name</th>
             <th>Album Name</th>
+            <th>Chord Sheet</th>
         </tr>
         <d:forEach items="${songsModelKey}" var="song">
             <tr scope="row">
             <td>${song.id}</td>
-            <td>${song.name}</td>
-            <td>${song.time}</td>
-            <td>${song.key}</td>
-            <td>${song.genre}</td>
+            <td>${song.songName}</td>
+            <td>${song.songTime}</td>
+            <td>${song.songKey}</td>
+            <td>${song.songGenre}</td>
             <td>${song.artistName}</td>
             <td>${song.albumName}</td>
+                <td>${song.chordSheet}</td>
             </tr>
         </d:forEach>
     </table>

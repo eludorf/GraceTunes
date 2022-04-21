@@ -8,13 +8,14 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface SongDAO extends JpaRepository<Song, Integer> {
 
     Song findSongById(@Param("id") Integer id);
 
-    Song findSongBySongName(@Param("song_name") String song_name);
+    List<Song> findSongBySongName(@Param("song_name") String song_name);
 
     @Query(
             value = "SELECT * FROM SONG s WHERE s.song_key = G",
@@ -31,12 +32,10 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
 
     Song findSongBySongGenre(@Param("song_genre") String song_genre);
 
-    Song findSongByUserId(@Param("user_id") Integer user_id);
+    Optional<List<Song>>getSongsBySongNameStartingWith(String song_name);
 
     List<Song> findAll();
 
-
-
-
+    void deleteSongById(Integer id);
 }
 

@@ -38,6 +38,9 @@ public class Song {
     @Column(name = "album_name", nullable = false)
     private String albumName;
 
+    @Column(name = "chord_sheet")
+    private String chordSheet;
+
     @ManyToMany(fetch = FetchType.LAZY) // don't load user with song
     @JoinTable(
             name = "user_song",

@@ -21,22 +21,20 @@ public class Review {
     @Column(name= "id")
     private Integer id;
 
-    @Column(name = "rating", nullable = false, unique = true)
+    @Column(name = "rating", nullable = false)
     private Integer rating;
 
-    @Column(name = "review", nullable = false, unique = true)
+    @Column(name = "review", nullable = false)
     private String review;
 
     @ManyToOne(targetEntity = User.class)
     @JoinColumn(name="user_id", referencedColumnName = "id")
     @NotNull
-    @UniqueElements
     private User user;
 
     @ManyToOne(targetEntity = Song.class)
     @JoinColumn(name="song_id", referencedColumnName = "id")
     @NotNull
-    @UniqueElements
     private Song song;
 
 }

@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +22,8 @@
     </style>
 </head>
 <body>
+<script type="text/javascript" src="<c:url value="../../../pub/js/match.js"/>">
+</script>
 <h1><font color="white">GraceTunes User Registration</h1>
 <div class="container" id="container"></div>
 <form action="/user/registerSubmit" method="post">
@@ -68,11 +72,13 @@
                 value="${form.password}"
         />
     </div>
+    <div id="message"></div>
     <div class="mb-3">
         <label for="formConfirmPassword" class="form-label">Confirm Password:</label>
         <input
                 name="confirmPassword"
                 type="password"
+                onkeyup="match()";
                 class="form-control"
                 id="formConfirmPassword"
                 placeholder="confirm password"
