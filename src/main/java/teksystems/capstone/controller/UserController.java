@@ -15,7 +15,6 @@ import teksystems.capstone.database.Entity.UserRole;
 import teksystems.capstone.formbean.RegisterFormBean;
 
 import java.security.Principal;
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller

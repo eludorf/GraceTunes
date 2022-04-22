@@ -44,12 +44,15 @@ console.log(clickedBtnname + " " + bananas);
     });
 });
 </script>
+
+
 <table cellspacing="0", width="100%">
     <tr>
         <th>Like Song</th>
         <th>Name</th>
         <th>Artist</th>
         <th>Key</th>
+        <th>Edit</th>
     </tr>
     <c:forEach items="${allSongs}" var="song">
         <tr scope="row">
@@ -57,6 +60,7 @@ console.log(clickedBtnname + " " + bananas);
             <td>${song.songName}</td>
             <td>${song.artistName}</td>
             <td>${song.songKey}</td>
+            <td><a href="/user/updatesong/${song.id}">Edit</a></td>
 
         </tr>
     </c:forEach>

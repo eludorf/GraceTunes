@@ -3,7 +3,6 @@ package teksystems.capstone.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -39,11 +38,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .defaultSuccessUrl("/user/landing")
                 .and()
                 .logout()
-                .invalidateHttpSession(true)
+                        .invalidateHttpSession(true)
                 // this is the URL to log the user out
                 .logoutUrl("/login/logout")
                 // the URL that the user goes to after they logout
-                .logoutSuccessUrl("/index")
+                .logoutSuccessUrl("/user/landing")
                 .and()
                 .exceptionHandling()
                 .accessDeniedPage("/error/404");

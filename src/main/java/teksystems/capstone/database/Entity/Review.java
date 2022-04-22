@@ -1,14 +1,12 @@
 package teksystems.capstone.database.Entity;
 
 import lombok.*;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-@ToString
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,14 +25,13 @@ public class Review {
     @Column(name = "review", nullable = false)
     private String review;
 
-    @ManyToOne(targetEntity = User.class)
+    @ManyToOne
     @JoinColumn(name="user_id", referencedColumnName = "id")
     @NotNull
     private User user;
 
-    @ManyToOne(targetEntity = Song.class)
+    @ManyToOne
     @JoinColumn(name="song_id", referencedColumnName = "id")
-    @NotNull
     private Song song;
 
 }

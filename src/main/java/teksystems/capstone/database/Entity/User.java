@@ -2,6 +2,7 @@ package teksystems.capstone.database.Entity;
 
 import lombok.*;
 import javax.persistence.*;
+import java.util.List;
 
 
 @Getter
@@ -30,5 +31,8 @@ public class User {
 
     @Column(name = "password", nullable = false, unique = false)
     private String password;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private List<Review> userReviews;
 }
 

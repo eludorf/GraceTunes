@@ -48,4 +48,7 @@ public class Song {
             inverseJoinColumns = @JoinColumn(name="user_id"))
     private List<User> user;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "song")
+    private List<Review> songReviews;
+
 }

@@ -1,6 +1,5 @@
 package teksystems.capstone.database.DAO;
 
-import org.hibernate.mapping.Collection;
 import org.springframework.data.jpa.repository.Query;
 import teksystems.capstone.database.Entity.Song;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,9 +8,6 @@ import org.springframework.stereotype.Repository;
 import teksystems.capstone.database.Entity.User;
 
 import java.util.List;
-
-import static javax.swing.text.html.HTML.Tag.SELECT;
-import static org.hibernate.hql.internal.antlr.HqlTokenTypes.FROM;
 
 @Repository
 public interface SongDAO extends JpaRepository<Song, Integer> {

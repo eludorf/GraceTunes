@@ -46,12 +46,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="search">Search<i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
-                        <sec:authorize access="isAuthenticated()">
+                        <sec:authorize access="!isAuthenticated()">
                         <li class="nav-item">
-                            <a class="nav-link" href="login">Login</a>
+                            <a class="nav-link" href="/user/login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register">Register</a>
+                        </li>
+                        </sec:authorize>
+                        <sec:authorize access="isAuthenticated()">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login/logout">Logout</a>
                         </li>
                         </sec:authorize>
                     </ul>
