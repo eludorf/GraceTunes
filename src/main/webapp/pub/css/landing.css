@@ -96,7 +96,7 @@ li {
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: white;
+    background-color: #023047;
     border: 0px;
-    color: #023047;
+    color: white;
 }

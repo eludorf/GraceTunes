@@ -104,10 +104,3 @@ public class UserController {
     }
 
 
-
-//    @RequestMapping(value = "/user/loginSubmit", method = RequestMethod.POST)
-//    public ModelAndView loginUserSubmit( RegisterFormBean form) throws Exception {
-//        ModelAndView response = new ModelAndView();
-//        response.setViewName("redirect:/user/landing");
-//        return response;
-//    }

@@ -1,5 +1,7 @@
 package teksystems.capstone.database.DAO;
 
+import org.springframework.data.jpa.repository.Query;
+import teksystems.capstone.database.Entity.Song;
 import teksystems.capstone.database.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;

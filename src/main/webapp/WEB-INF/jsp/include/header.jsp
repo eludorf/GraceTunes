@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,12 +46,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="search">Search<i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
+                        <sec:authorize access="isAuthenticated()">
                         <li class="nav-item">
                             <a class="nav-link" href="login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register">Register</a>
                         </li>
+                        </sec:authorize>
                     </ul>
                 </div>
             </div>

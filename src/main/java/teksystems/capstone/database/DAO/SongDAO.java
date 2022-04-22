@@ -6,21 +6,20 @@ import teksystems.capstone.database.Entity.Song;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import teksystems.capstone.database.Entity.User;
 
 import java.util.List;
-import java.util.Optional;
+
+import static javax.swing.text.html.HTML.Tag.SELECT;
+import static org.hibernate.hql.internal.antlr.HqlTokenTypes.FROM;
 
 @Repository
 public interface SongDAO extends JpaRepository<Song, Integer> {
 
-    Song findSongById(@Param("id") Integer id);
+    @Query("select s from Song s where s.id = :id")
+    Song findSongById(Integer id);
 
     List<Song> findSongBySongName(@Param("song_name") String song_name);
-
-    @Query(
-            value = "SELECT * FROM SONG s WHERE s.song_key = G",
-            nativeQuery = true)
-    Collection findAllSongsInG();
 
     Song findSongByArtistName(@Param("artist_name") String artist_name);
 
@@ -34,8 +33,12 @@ public interface SongDAO extends JpaRepository<Song, Integer> {
 
   List<Song>getSongsBySongNameStartingWith(@Param("song_name")String song_name);
 
+    @Query(value = "SELECT * FROM song", nativeQuery = true)
     List<Song> findAll();
 
     void deleteSongById(Integer id);
+
+    public List<Song> findSongsByUserContaining(User user);
+
 }
 

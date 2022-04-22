@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="c" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "d" %>
 
 <jsp:include page="../include/header.jsp" />
@@ -7,12 +7,10 @@
 <div id="search-container" class="container">
     <h1 style="color:#023047">Search Songs</h1>
 
-<form action="/user/search" method="GET">
+<form action="/user/search" method="GET" style="color: #023047">
     Song Name <input type="text" style="color:#023047" name="songName" id="songNameId" value="${songName}">
-    <button type="submit" class="btn btn=primary">Search</button>
+    <button type="submit" class="btn btn-primary" name="submitButton">Search</button>
 </form>
-
-<br>
 
     <table class="table">
         <tr scope="row">
