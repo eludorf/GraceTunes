@@ -1,17 +1,34 @@
-<h1>GraceTunes</h1>
+# GraceTunes
+#### Table of Contents
+* [Description](#Description)
+* [Technologies](#Technologies)
+* [Screenshot](#Screenshot)
+* [Challenges](#Challenges)
+* [License](#License)
 
-As a user, I want to be able to create an account and log in with secure authentication.
+## Description
 
-As a user, I want to be able to search the website for songs whether that's by song name, artist name, or different tags (like genre, key, etc).
 
-As a user, I want to be able to like songs so that I can come back to them later.
+## Technologies
+* JSP/CSS/Javascript
+* [JQuery](https://api.jquery.com/)
+* [mySQL](https://dev.mysql.com/doc/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Java](https://docs.oracle.com/en/java/)
+* [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
+* [Junit](https://junit.org/junit5/docs/current/user-guide/)
+* [Maven](https://maven.apache.org/guides/index.html)
+* [Lombok](https://projectlombok.org/features/all)
+* [Bcrypt](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/crypto/bcrypt/BCrypt.html)
+* [Log4j](https://www.slf4j.org/docs.html)
+* [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
 
-As a user, I want to be able to have my liked songs saved to my account so that I can look at them later on.
+## Screenshot
 
-As a user, I want to have my list of liked songs show when I click on my profile.
+## License
 
-As a user, I don't want to have to log in to search for a song but I do need to log in to add to my list of liked songs.
 
-As a user, I want each song's page to link to the song on Spotify.
 
-As a user, when I click on a song, I want to be able to see the sheet music for that song and the key that the song is originally in.
+
+
+
