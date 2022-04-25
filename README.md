@@ -7,10 +7,9 @@ GraceTunes is an application designed for praise leaders, musicians, and any wor
 
 - [Usage](#usage)
 - [Database](#database)
-- [License](#license)
 - [Links](#links)
 - [Technologies](#technologies)
-- [Contributors](#contributors)
+- [Screenshots] (#screenshots)
 - [Questions](#questions)
 
 
@@ -40,6 +39,12 @@ The GitHub repository for this application can be found at [here](https://github
 * [Bcrypt](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/crypto/bcrypt/BCrypt.html)
 * [Log4j](https://www.slf4j.org/docs.html)
 * [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
+
+## Screenshots
+
+![Add Song]<img width="900" alt="Add Song" src="https://user-images.githubusercontent.com/99916017/165161654-37923d55-bd52-4618-b39f-f748d88ec1ce.png">
+![Search]<img width="900" alt="Search" src="https://user-images.githubusercontent.com/99916017/165161704-f3aa1ee3-88ed-4c03-8f49-caff2d16165b.png">
+
 
 ## Questions
 Please contact me at erika.ludorf@gmail.com with any questions.
