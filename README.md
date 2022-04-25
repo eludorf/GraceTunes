@@ -20,13 +20,12 @@ To start using the application, the user should create an account by clicking on
 <img width="900" alt="GraceTunes Homepage" src="https://user-images.githubusercontent.com/99916017/165152911-9e3db9ca-d6db-4144-8c1c-8c23a26a74eb.png">
 
 ## Database 
-This is an ER diagram of the database structure:![ER Diagram](https://user-images.githubusercontent.com/99916017/165155036-8e5751ef-265e-4577-8596-45ff5787976e.png)
+This is an ER diagram of the database structure:
 
+![ER Diagram](https://user-images.githubusercontent.com/99916017/165155036-8e5751ef-265e-4577-8596-45ff5787976e.png)
 
 ## Links
-The GitHub repository for this application can be found at
-
-
+The GitHub repository for this application can be found at [here](https://github.com/eludorf/Ludorf_Erika_GraceTunes_CaseStudy).
 
 ## Technologies
 * JSP/CSS/Javascript
