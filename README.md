@@ -42,8 +42,8 @@ The GitHub repository for this application can be found at [here](https://github
 
 ## Screenshots
 
-![Add Song]<img width="900" alt="Add Song" src="https://user-images.githubusercontent.com/99916017/165161654-37923d55-bd52-4618-b39f-f748d88ec1ce.png">
-![Search]<img width="900" alt="Search" src="https://user-images.githubusercontent.com/99916017/165161704-f3aa1ee3-88ed-4c03-8f49-caff2d16165b.png">
+![Add Song]<img width="700" alt="Add Song" src="https://user-images.githubusercontent.com/99916017/165161654-37923d55-bd52-4618-b39f-f748d88ec1ce.png">
+![Login]<img width="700" alt="Screen Shot 2022-04-25 at 2 39 44 PM" src="https://user-images.githubusercontent.com/99916017/165161931-3519bda1-14df-4e08-83c3-ced80a8b62d8.png">
 
 
 ## Questions
