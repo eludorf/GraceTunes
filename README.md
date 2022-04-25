@@ -17,6 +17,8 @@ GraceTunes is an application designed for praise leaders, musicians, and any wor
 ## Usage
 To start using the application, the user should create an account by clicking on the "Register" button on the landing page.
 
+![Screenshot of landing page](src/main/webapp/pub/images/
+
 ## Database 
 This is an ER diagram of the database structure:
 
