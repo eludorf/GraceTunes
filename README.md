@@ -16,7 +16,7 @@ GraceTunes is an application designed for praise leaders, musicians, and any wor
 ## Usage
 To start using the application, the user should create an account by clicking on the "Register" button on the landing page.
 
-<img width="900" alt="GraceTunes Homepage" src="https://user-images.githubusercontent.com/99916017/165152911-9e3db9ca-d6db-4144-8c1c-8c23a26a74eb.png">
+<img width="700" alt="GraceTunes Homepage" src="https://user-images.githubusercontent.com/99916017/165152911-9e3db9ca-d6db-4144-8c1c-8c23a26a74eb.png">
 
 ## Database 
 This is an ER diagram of the database structure:
