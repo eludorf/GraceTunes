@@ -1,13 +1,29 @@
 # GraceTunes
-#### Table of Contents
-* [Description](#Description)
-* [Technologies](#Technologies)
-* [Screenshot](#Screenshot)
-* [Challenges](#Challenges)
-* [License](#License)
 
 ## Description
 GraceTunes is an application designed for praise leaders, musicians, and any worship music afficionado to access a database of songs. A user can create an account and then add liked songs to their profile when they are logged in. They are also able to add songs to the database and modify existing songs.
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Database](#database)
+- [License](#license)
+- [Links](#links)
+- [Technologies](#technologies)
+- [Contributors](#contributors)
+- [Questions](#questions)
+
+
+## Usage
+To start using the application, the user should create an account by clicking on the "Register" button on the landing page.
+
+## Database 
+This is an ER diagram of the database structure:
+
+## Links
+The GitHub repository for this application can be found at
+
+
 
 ## Technologies
 * JSP/CSS/Javascript
@@ -23,10 +39,8 @@ GraceTunes is an application designed for praise leaders, musicians, and any wor
 * [Log4j](https://www.slf4j.org/docs.html)
 * [Spring Security](https://docs.spring.io/spring-security/reference/index.html)
 
-## Screenshot
-
-## License
-
+## Questions
+Please contact me at erika.ludorf@gmail.com with any questions.
 
 
 
