@@ -9,7 +9,7 @@ GraceTunes is an application designed for praise leaders, musicians, and any wor
 - [Database](#database)
 - [Links](#links)
 - [Technologies](#technologies)
-- [Screenshots] (#screenshots)
+- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 
