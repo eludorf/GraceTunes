@@ -7,7 +7,7 @@
 * [License](#License)
 
 ## Description
-
+GraceTunes is an application designed for praise leaders, musicians, and any worship music afficionado to access a database of songs. A user can create an account and then add liked songs to their profile when they are logged in. They are also able to add songs to the database and modify existing songs.
 
 ## Technologies
 * JSP/CSS/Javascript
